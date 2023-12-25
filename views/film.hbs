@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    {{> navbar}}
+    <h1>{{ film.title }}</h1>
+    <p>Год: {{ film.year }}</p>
+    <p>Режиссер: {{ film.director }}</p>
+    <h2>Актеры:</h2>
+    <ul>
+        {{#each film.actors}}
+            <li>{{ this }}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>

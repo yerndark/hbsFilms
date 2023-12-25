@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    {{> navbar}}
+    <h1>Фильмы</h1>
+   <ul>
+      {{#each films}}
+        <li>
+          <a href="/films/{{id}}">{{title}}</a>
+        </li>
+      {{/each}}
+    </ul>
+</body>
+</html>
